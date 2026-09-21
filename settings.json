@@ -1,50 +1,37 @@
 {
-  // 已读过的更新日志版本
   "lastChangelogVersion": "0.86.1",
-
-  // 界面主题
   "theme": "dark",
-
-  // 默认模型提供商与模型 ID（对应 models.json）
   "defaultProvider": "localhost-gemini",
   "defaultModel": "gemini-3.8-flash-high",
-
-  // 默认开放给 AI 的核心工具
   "defaultTools": [
-    "read",  // 读文件
-    "bash",  // 执行终端命令
-    "edit",  // 替换修改文件
-    "write"  // 创建/覆写新文件
+    "read",
+    "bash",
+    "edit",
+    "write"
   ],
-
-  // 已启用的扩展包列表
   "packages": [
-    "npm:pi-mcp-adapter",          // MCP 协议适配器
-    "npm:pi-web-access",           // 联网搜索与网页抓取
-    "npm:pi-subagents",            // 多 Agent 协作与议会仲裁
-    "npm:@dietrichgebert/ponytail", // 极简编码与防过度设计审查
-    "npm:@narumitw/pi-statusline",  // 底部状态栏显示
-    "npm:@narumitw/pi-plan-mode",   // 任务规划与结构化提问
-    "npm:@ff-labs/pi-fff",          // 极速代码与文件查找（fffind/ffgrep）
-    "npm:pi-cc-extensions",        // 生产力增强扩展
-    "npm:pi-rtk-optimizer"         // 终端长输出压缩优化（省 Token）
+    "npm:pi-mcp-adapter",
+    "npm:pi-web-access",
+    "npm:pi-subagents",
+    "npm:@dietrichgebert/ponytail",
+    "npm:@narumitw/pi-statusline",
+    "npm:@narumitw/pi-plan-mode",
+    "npm:@ff-labs/pi-fff",
+    "npm:pi-cc-extensions",
+    "npm:pi-rtk-optimizer"
   ],
-
-  // API 失败自动重试策略
   "retry": {
-    "enabled": true,               // 开启接口失败重试
-    "maxRetries": 8,               // 最大重试次数
-    "baseDelayMs": 10000,          // 初始等待 10s
+    "enabled": true,
+    "maxRetries": 8,
+    "baseDelayMs": 10000,
     "provider": {
-      "maxRetryDelayMs": 120000    // 最大等待上限 120s
+      "maxRetryDelayMs": 120000
     }
   },
-
-  // 界面与启动偏好
-  "quietStartup": true,            // 静默启动（隐藏启动欢迎标语）
-  "tuiMode": "regular",            // 终端 TUI 模式
-  "fullscreenExitOutput": "transcript", // 退出全屏时保留完整历史会话
+  "quietStartup": true,
+  "tuiMode": "regular",
+  "fullscreenExitOutput": "transcript",
   "markdown": {
-    "mermaid": "final"             // Mermaid 图表渲染时机
+    "mermaid": "final"
   }
 }
