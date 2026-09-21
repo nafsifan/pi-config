@@ -99,7 +99,7 @@
 
 ### 1. 同步配置到本地
 ```bash
-git clone <你的仓库地址> ~/.pi/agent
+git clone https://github.com/nafsifan/pi-config.git ~/.pi/agent
 cd ~/.pi/agent
 ```
 
