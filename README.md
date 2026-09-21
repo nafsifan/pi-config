@@ -104,17 +104,17 @@ cd ~/.pi/agent
 ```
 
 ### 2. 安装全部扩展依赖
+逐条运行以下命令安装扩展包：
 ```bash
-pi install \
-  pi-mcp-adapter \
-  pi-web-access \
-  pi-subagents \
-  @dietrichgebert/ponytail \
-  @narumitw/pi-statusline \
-  @narumitw/pi-plan-mode \
-  @ff-labs/pi-fff \
-  pi-cc-extensions \
-  pi-rtk-optimizer
+pi install npm:pi-mcp-adapter
+pi install npm:pi-web-access
+pi install npm:pi-subagents
+pi install npm:@dietrichgebert/ponytail
+pi install npm:@narumitw/pi-statusline
+pi install npm:@narumitw/pi-plan-mode
+pi install npm:@ff-labs/pi-fff
+pi install npm:pi-cc-extensions
+pi install npm:pi-rtk-optimizer
 ```
 
 ### 3. 配置模型凭据
