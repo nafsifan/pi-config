@@ -1,0 +1,21 @@
+# 敏感凭据与认证信息
+auth.json
+models.json
+models-store.json
+
+# 临时缓存、索引与会话历史
+sessions/
+web-search-cache/
+mcp-cache.json
+mcp-npx-cache.json
+fff/
+
+# 二进制文件与依赖包
+bin/
+npm/node_modules/
+node_modules/
+
+# 操作系统与临时文件
+.DS_Store
+Thumbs.db
+*.log
